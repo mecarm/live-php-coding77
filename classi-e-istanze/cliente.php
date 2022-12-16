@@ -10,6 +10,15 @@ class Cliente{
         $this -> lastname = $_lastname;
         $this -> age = $_age;
     }
+    public function isAdult(){
+        if( $this->age > 18){
+            return "l'utente $this->name  $this->lastname è maggiorenne";
+        } 
+        else{
+            return "l'utente $this->name  $this->lastname è minorenne";
+        }
+    }
 }
+
 
 ?>
